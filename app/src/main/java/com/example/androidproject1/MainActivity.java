@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             int firstDay = cal1.get(Calendar.DAY_OF_WEEK); // 첫번째 요일
             int lastDay = cal1.getActualMaximum(Calendar.DATE); //달의 마지막 날짜
             for (int i = 1; i < firstDay; i++) {
-                dates.add("");
+                dates.add(""); 
             }
             for (int j = 1; j <= lastDay; j++) {
 
