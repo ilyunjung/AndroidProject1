@@ -12,12 +12,14 @@
             android:id="@+id/monthprev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="left"
+            android:gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
             android:text="이전"/>
 
         <TextView
             android:id="@+id/date"
-            android:layout_width="200dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:gravity="center"/>
@@ -26,7 +28,9 @@
             android:id="@+id/monthnext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="right"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
             android:text="다음"/>
     </LinearLayout>
 
@@ -40,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center_horizontal"
+            android:gravity="center"
             android:text="일"
             android:textSize="20dp" />
 
@@ -94,18 +98,18 @@
     </LinearLayout>
     <GridView
         android:id="@+id/gridview"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="10dp"
+        android:layout_weight="10"
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
         android:numColumns="7"
-        android:stretchMode="columnWidth"
-        android:gravity="center_horizontal"
+
         />
     <TextView
         android:id="@+id/printDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingTop="1dp"
+        android:layout_margin="30dp"
         />
 
 
